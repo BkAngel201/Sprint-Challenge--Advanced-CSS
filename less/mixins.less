@@ -1,1 +1,25 @@
 // Mixins Here
+.flex() {
+    display: flex;
+}
+.flex-column() {
+    .flex();
+    flex-direction: column;
+}
+.hide() {
+    display: none;
+}
+
+.rounded-buttons(@borderRadius, @bgColor, @txtColor, @fontSize) {
+    background-color: @bgColor;
+    color: @txtColor;
+    text-align: center;
+    border-radius: @borderRadius;
+    font-size: @fontSize;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.rounded-buttons-hover(@bgColor, @textColor) {
+    background-color: @bgColor;
+    color: @textColor;
+}
