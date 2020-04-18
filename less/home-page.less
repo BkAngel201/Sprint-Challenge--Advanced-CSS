@@ -79,11 +79,11 @@
         &:hover {
           .rounded-buttons-hover(@waterloo, @ebony-clay);
         }
-        @media @max500 {
+        @media @max650 {
           width: 100%;
         }
       }
-      @media @max500 {
+      @media @max650 {
         width: 100%;
       }
     }
@@ -96,16 +96,14 @@
         height: auto;
         border-radius: 10px;
       }
-      @media @max500 {
+      @media @max650 {
         width: 100%;
         margin-left: 0;
         margin-bottom: 20px;
-      }
-      @media @max500 {
         order: -1;
       }
     }
-    @media @max500 {
+    @media @max650 {
       margin-top: 20px; 
       flex-direction: column;
       padding: 20px;
@@ -128,6 +126,13 @@
         flex-grow: 1;
         margin-right: 40px;
         padding: 10px 20px;
+        @media @max650 {
+          margin-right: 10px
+        }
+        @media @max500 {
+          margin-right: 0;
+          margin-bottom: 15px;
+        }
       }
       .btn {
         .rounded-buttons(3px, @ebony-clay, @sea-shell, 1.7rem);
@@ -136,6 +141,15 @@
         &:hover {
           .rounded-buttons-hover(@waterloo, @ebony-clay);
         }
+        @media @max650 {
+          padding: 10px 20px;
+        }
+        @media @max500 {
+          width: 100%;
+        }
+      }
+      @media @max500 {
+        .flex-column();
       }
     }
   }

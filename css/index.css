@@ -293,12 +293,12 @@ footer {
   background-color: #81848E;
   color: #23293B;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
   .home .walk .walk-text .btn {
     width: 100%;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
   .home .walk .walk-text {
     width: 100%;
   }
@@ -312,19 +312,15 @@ footer {
   height: auto;
   border-radius: 10px;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
   .home .walk .walk-img {
     width: 100%;
     margin-left: 0;
     margin-bottom: 20px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .home .walk .walk-img {
     order: -1;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
   .home .walk {
     margin-top: 20px;
     flex-direction: column;
@@ -350,6 +346,17 @@ footer {
   margin-right: 40px;
   padding: 10px 20px;
 }
+@media only screen and (max-width: 650px) {
+  .home .newsletter-subscribe form input {
+    margin-right: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home .newsletter-subscribe form input {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
 .home .newsletter-subscribe form .btn {
   background-color: #23293B;
   color: #F1F1F1;
@@ -364,4 +371,20 @@ footer {
 .home .newsletter-subscribe form .btn:hover {
   background-color: #81848E;
   color: #23293B;
+}
+@media only screen and (max-width: 650px) {
+  .home .newsletter-subscribe form .btn {
+    padding: 10px 20px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home .newsletter-subscribe form .btn {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home .newsletter-subscribe form {
+    display: flex;
+    flex-direction: column;
+  }
 }
