@@ -1,1 +1,18 @@
 // Mixins Here
+.flex() {
+    display: flex;
+}
+.flex-column() {
+    .flex();
+    flex-direction: column;
+}
+
+.rounded-buttons(@borderRadius, @bgColor, @txtColor, @fontSize) {
+    background-color: @bgColor;
+    color: @txtColor;
+    text-align: center;
+    border-radius: @borderRadius;
+    font-size: @fontSize;
+    padding: 10px 0;
+    cursor: pointer;
+}

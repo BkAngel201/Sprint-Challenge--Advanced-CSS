@@ -1,1 +1,27 @@
 // Navigation code here
+nav {
+    .flex-column();
+    background-color: @nav-bg;
+    text-align: center;
+    border: 1px solid @nav-border;
+    h1 {
+        font-size: 5rem;
+    }
+    ul {
+        .flex();
+        margin: 10px auto 0;
+        max-width: 500px;
+        li {
+            .flex();
+            flex-grow: 1;
+            a {
+                font-size: 1.5rem;
+                flex-grow: 1;
+                padding: 10px 0;
+                text-decoration: none;
+                color: @nav-font;
+                font-weight: 600;
+            }
+        }
+    }
+}
